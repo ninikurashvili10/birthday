@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <img src="./images-removebg-preview.png" alt=""> -->
+    
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Dear Mariam</strong>
+              <p>happiest 22th birthday,again :D</p>
+              <p>wish u all the best</p>
+              <p>love u 3000 </p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+</div>
+<div class="cake-container">
+    <div class="cake">
+      <div class="layer top"></div>
+      <div class="layer middle"></div>
+      <div class="layer bottom"></div>
+      <div class="candles">
+        <div class="candle" data-id="1">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" data-id="2">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" data-id="3">
+          <div class="flame"></div>
+        </div>
+      </div>
+    </div>
+    <p class="message">Click the candles to blow them out!</p>
+  </div>
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      const letter = document.querySelector(".letter");
+
+      
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+      });
+      const candles = document.querySelectorAll('.candle');
+candles.forEach((candle) => {
+  candle.addEventListener('click', () => {
+    candle.classList.toggle('off'); 
+  });
+});
+    </script>
+  </body>
+</html>
