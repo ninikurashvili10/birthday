@@ -29,13 +29,6 @@
     <p class="message">Click the candles to blow them out!</p>
   </div>
     <script>
-      const envelope = document.querySelector(".envelope-wrapper");
-      const letter = document.querySelector(".letter");
-
-      
-      envelope.addEventListener("click", () => {
-        envelope.classList.toggle("flap");
-      });
       const candles = document.querySelectorAll('.candle');
 candles.forEach((candle) => {
   candle.addEventListener('click', () => {
